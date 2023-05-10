@@ -2,7 +2,7 @@
 
 type Alphanumerics = string | number;
 
-function add(param1: Alphanumerics, param2: Alphanumerics): Alphanumerics {
+function add1(param1: Alphanumerics, param2: Alphanumerics): Alphanumerics {
     if (typeof param1 === 'number' && typeof param2 === 'number') {
         return param1 + param2
     } else {
@@ -10,9 +10,9 @@ function add(param1: Alphanumerics, param2: Alphanumerics): Alphanumerics {
     }
 }
 
-const addGuard1 = add(1, 2);
+const addGuard1 = add1(1, 2);
 console.log(addGuard1);
-const addGurad2 = add('1', '2');
+const addGurad2 = add1('1', '2');
 console.log(addGurad2);
 
 // in guard
