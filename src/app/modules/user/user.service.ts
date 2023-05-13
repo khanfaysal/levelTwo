@@ -17,7 +17,7 @@ export const getUsersFromDB = async():Promise<IUser[]> => {
 // single data find
 
 export const getUserByIdFromDB = async (payload: string): Promise<IUser | null> => {
-    const user = await User.findOne({id: payload}, {name: 1, password: 1, email: 1});
+    const user = await User.findOne({id: payload}, {name: 1, password: 1, email: 1, contactNo: 1});
     return user;
 }
 
